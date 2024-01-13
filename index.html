@@ -25,10 +25,21 @@
           <input id="search-form-submit-button" type="submit" value="Search" />
         </form>
       </header>
-      <main>
-        <h1>Paris</h1>
-        <p>Friday 20:19, mist<br />Humidity: 95%, Wind: 2.57 km/h</p>
-        <div>☀️ -1°C</div>
+      <main class="weather-info">
+        <span id="weather-info-left"
+          ><h1 class="city">Paris</h1>
+          <p class="weather-details">
+            <span id="date-time">Friday 20:19</span>,
+            <span id="weather-details-description">mist</span><br />Humidity:
+            <strong id="humidity">95%</strong>, Wind:
+            <strong id="wind-speed">2.57 km/h</strong>
+          </p>
+        </span>
+        <div id="weather-info-right">
+          <div id="icon">☀️</div>
+          <div id="temperature">-1</div>
+          <div id="units">°C</div>
+        </div>
       </main>
       <footer>
         This project was coded by Caitlin Downs, is open-sourced on GitHub and
