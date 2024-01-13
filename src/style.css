@@ -58,6 +58,7 @@ strong {
 #icon {
   width: 88px;
   height: 88px;
+  margin-top: 15px;
 }
 
 #temperature {
