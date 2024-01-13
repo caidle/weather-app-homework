@@ -20,7 +20,7 @@ function formatDate(date) {
     minute = `0${minute}`;
   }
 
-  return `${day}, ${hour}:${minute}`;
+  return `${day}, ${hour}:${minute},`;
 }
 
 function updateWeather(response) {
