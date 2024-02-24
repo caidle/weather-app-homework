@@ -58,4 +58,33 @@ function searchSubmit(event) {
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", searchSubmit);
 
+function displayForecast() {
+    let days = ['Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    let forecastHtml = "";
+
+    days.forEach(function(day)
+    forecastHtml = forecastHtml +
+    `<div class="forecast">
+       <div class="forecast-day">Thu</div>
+       <div class="forecast-icon">☀️</div>
+       <div class="forecast-temps">
+         <span class="forecast-temps-both forecast-temps-max"><strong>
+         18°</strong></span>
+         <span class="forecast-temps-both forecast-temps-min">12°</span>
+       </div>
+     </div>`;
+});
+
+let forecastElement = document.querySelector("#forecast");
+forecastElement.innerHTML = forecastHtml;
+}
+
+
 searchCity("Atlanta");
+
+
+
+
+   
+     
+ 
